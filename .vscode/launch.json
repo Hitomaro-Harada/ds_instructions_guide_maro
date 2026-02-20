@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // 現在開いているファイルをそのままデバッグ実行する（汎用）
+    {
+      "name": "Python: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "internalConsole",
+      // Trueにすると自分のコードのみ停止、Falseにするとライブラリ内部にも入れる
+      "justMyCode": false
+    },
+    // 学習スクリプトをデバッグ実行する
+    {
+      "name": "Python: train.py",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/train.py",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    // MLflow トラッキング付きの学習スクリプトをデバッグ実行する
+    {
+      "name": "Python: train_with_mlflow.py",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/train_with_mlflow.py",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}

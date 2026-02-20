@@ -11,6 +11,7 @@ __pycache__/
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
+!.vscode/launch.json
 # macOSのDS_システムファイル
 .DS_Store
 # .gitkeep以外のdataディレクトリ
